@@ -7,6 +7,7 @@
 }
 
 body{
+    font-family: 'Tahoma', sans-serif;
     margin: 0;
     background-color: var(--white);
     color: var(--grey);
@@ -18,7 +19,7 @@ a{
 
 .menu-bar{
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     background-color: var(--darkBlue);
 }
 
@@ -26,6 +27,7 @@ a{
     border: none;
     background-color: var(--darkBlue);
 }
+
 .menu-bar button img{ 
     background-color: var(--darkBlue);
     width:50px;
@@ -40,11 +42,20 @@ a{
 
 .logo-field{
     display: flex;
-    padding: 2em;
-    justify-content: left;
+    justify-content: flex-start;
     background-color: var(--lightBlue);
+}
+
+.logo-field a {
+    margin-left: 0.5em;
+}
+
+.logo-field p {
+    margin-top: 2em;
+    margin-left: 4.5em;
+    text-indent: -4em;
+    font-size: largee;
     color: var(--white);
-    font-size: larger;
 }
 
 .BUTTON_NEXT_BACK {
