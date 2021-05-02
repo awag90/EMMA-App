@@ -17,6 +17,7 @@ a{
     text-decoration: none;
 }
 
+/* HEADER */
 .menu-bar{
     display: flex;
     justify-content: flex-end;
@@ -57,6 +58,28 @@ a{
     font-size: largee;
     color: var(--white);
 }
+
+/* FOOTER */
+
+.big-blue-block{
+    display:flex;
+    flex-direction: column;
+    background-color: var(--darkBlue);
+    text-align: center;
+    padding: 1.5em 2em 4em 2em;
+    color: var(--white);
+}
+.big-blue-block p{
+    margin:0 2em 3.5em 2em;
+
+}
+.big-blue-block a{
+    background-color: var(--red);
+    font-weight: bold;
+    padding: 1em 1.5em;
+    border-radius: 2em;
+}
+
 
 .BUTTON_NEXT_BACK {
    -webkit-border-radius: 32px;
