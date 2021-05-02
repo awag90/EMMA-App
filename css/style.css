@@ -12,7 +12,57 @@ body{
 a{
     text-decoration: none;
 }
-img{
-    width:300px;
-    height:300px;
+.menu-bar button img{ 
+    width:50px;
+    height: 50px;
 }
+.BUTTON_NEXT_BACK {
+   -webkit-border-radius: 32px;
+   -moz-border-radius: 32px;
+   border-radius: 32px;
+   color: #1D3557;
+   font-family: Tahoma;
+   font-size: 40px;
+   font-weight: 100;
+   padding: 25px;
+   background-color: #C71010;
+   border: outset #337FED 6px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.BUTTON_NOTRUF {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #F3F8FE;
+    font-family: Tahoma;
+    font-size: 40px;
+    font-weight: 100;
+    padding: 55px;
+    background-color: #C71010;
+    text-shadow: 1px 1px 20px #000000;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+.BUTTON_FEEDBACK {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px; 
+    border-radius: 20px;
+    color: #F3F8FE;
+    font-family: Open Sans;
+    font-size: 58px;
+    font-weight: 400;
+    padding: 40px;
+    background-color: var(--darkBlue);
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center; 
+ }
+ 
+ 
