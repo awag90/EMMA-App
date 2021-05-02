@@ -1,3 +1,14 @@
+:root{
+    --red:#C71010;
+    --white:#f3f8fe;
+    --lightBlue:#457B9D;
+    --darkBlue:#1D3557;
+    --grey:#554F4A;
+}
+body{
+    background-color: var(--white);
+    color: var(--grey);
+}
 a{
     text-decoration: none;
 }
