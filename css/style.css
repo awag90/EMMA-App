@@ -64,12 +64,11 @@ a{
     cursor: pointer;
     text-align: center; 
  }
-
  img{
      border-radius: 10px;
  }
- 
-button{
-    width:500px;
+.MAIN_PANEL{
+    border-radius: 10rem;
+    background-color: var(--lightBlue);
 }
  
