@@ -9,6 +9,7 @@
 body{
     font-family: 'Tahoma', sans-serif;
     margin: 0;
+    padding: 0;
     background-color: var(--white);
     color: var(--grey);
 }
@@ -130,3 +131,45 @@ a{
     cursor: pointer;
     text-align: center; 
  }
+
+ footer{
+     background-color: var(--lightBlue);
+ }
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.copyright{
+    text-align: center;
+    color: var(--darkBlue);
+}
+
+.nav-links ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding-inline-start: 0;
+}
+
+.nav-links ul li{
+    display:block;
+    text-align: center;
+    padding: 1em;
+    width: 10em;
+}
+
+.social-media ul{
+    padding-inline-start: 0;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.social-media ul li{
+    display: block;
+    margin: 0.5em 1em 0.5em 1em;
+}
+
+.social-media img{
+    width: 30px;
+}
