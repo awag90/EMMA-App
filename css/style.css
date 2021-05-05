@@ -19,6 +19,12 @@ a{
 }
 
 /* HEADER */
+
+.navbar-custom{
+    background-color: var(--darkBlue);
+}
+
+
 .menu-bar{
     display: flex;
     justify-content: flex-end;
