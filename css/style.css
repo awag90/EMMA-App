@@ -2,6 +2,7 @@
     --red:#C71010;
     --white:#f3f8fe;
     --lightBlue:#457B9D;
+    --lightBlueHover: #4f8bb1;
     --darkBlue:#1D3557;
     --grey:#554F4A;
 }
@@ -25,6 +26,14 @@ a{
 }
 nav img{
     width:1.5em;
+}
+.dropdown-menu, .dropdown-item{
+    background-color: var(--lightBlue);
+    color: var(--white);
+}
+.dropdown-menu a:hover{
+    background-color: var(--lightBlueHover);
+    color: var(--white);
 }
 
 .menu-bar{
