@@ -242,15 +242,15 @@ nav img{
 /* PANELS*/
 .MAIN_PANEL{
   background-color: var(--lightBlue);
-  width: 25em;
-  height: 25em;
+  width: 15em;
+  height: 15em;
   color: var(--red);
-  font-size: larger;
+  font-size: 24pt;
 }
 
 .MAIN_PANEL img{
-  width: 20em;
-  height:20em;
+  width: 11em;
+  height:11em;
 }
 
 /*SEPERATOR*/
