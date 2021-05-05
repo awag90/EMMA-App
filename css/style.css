@@ -171,6 +171,7 @@ nav img{
  }
  
  .BUTTON_NOTRUF {
+     margin-top: 1.5em;
      -webkit-border-radius: 20px;
      -moz-border-radius: 20px;
      border-radius: 20px;
@@ -207,6 +208,8 @@ nav img{
       visibility: hidden;
   }
 
+  
+
   @media (max-width: 992px){
     .seperator {
         display:none;
@@ -215,12 +218,48 @@ nav img{
     .course-add{
         margin-top: 5em;
     }
+
     .intro-text{
         display:none;
     }
+
     .collapsable-text{
         visibility: visible;
         text-align: center;
         margin-top:2em;
     }
   }
+
+  /*BOOTSTRAP-ROWS AND COLUMNS*/
+  .col-sm img{
+    width: 25em;
+}
+
+.row{
+    margin-top: 1.5em;
+}
+
+/* PANELS*/
+.MAIN_PANEL{
+  background-color: var(--lightBlue);
+  width: 25em;
+  height: 25em;
+  color: var(--red);
+  font-size: larger;
+}
+
+.MAIN_PANEL img{
+  width: 20em;
+  height:20em;
+}
+
+/*SEPERATOR*/
+
+.seperator{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+#heartwave img{
+    width: 35em;
+}
