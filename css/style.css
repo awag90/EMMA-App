@@ -131,6 +131,11 @@ nav img{
     width: 10em;
 }
 
+.nav-links ul li a{
+    color: var(--grey);
+    text-decoration: none;
+}
+
 .social-media ul{
     padding-inline-start: 0;
     display:flex;
