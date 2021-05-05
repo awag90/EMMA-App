@@ -24,6 +24,11 @@ a{
 .navbar-custom{
     background-color: var(--darkBlue);
 }
+.collapsable-text-custom{
+    color: var(--white);
+    background-color: var(--red);
+}
+
 nav img{
     width:1.5em;
 }
@@ -193,3 +198,24 @@ nav img{
      text-align: center; 
   }
  
+  .collapsable-text{
+      visibility: hidden;
+  }
+
+  @media (max-width: 992px){
+    .seperator {
+        display:none;
+    }
+
+    .course-add{
+        margin-top: 5em;
+    }
+    .intro-text{
+        display:none;
+    }
+    .collapsable-text{
+        visibility: visible;
+        text-align: center;
+        margin-top:2em;
+    }
+  }

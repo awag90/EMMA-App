@@ -33,16 +33,19 @@
                         <a class="nav-link" href="/html/index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Notsituationen
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Notsituationen
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="/html/atemnot/aufsetzen.html">Atemnot</a>
-                          <a class="dropdown-item" href="/html/atemstillstand/atmung-pruefen.html">Bewusstlosigkeit</a>
-                          <a class="dropdown-item" href="/html/atemstillstand/atmung-pruefen.html">Atemstillstand</a>
-                          <a class="dropdown-item" href="/html/allergischer_schock/allergischerSchock.html">Allergischer Schock</a>
-                          <a class="dropdown-item" href="/html/verbrennung/verbrennung.html">Verbrennung</a>
-                          <a class="dropdown-item" href="/html/blutung/blutung.html">Blutung</a>
+                            <a class="dropdown-item" href="/html/atemnot/aufsetzen.html">Atemnot</a>
+                            <a class="dropdown-item"
+                                href="/html/atemstillstand/atmung-pruefen.html">Bewusstlosigkeit</a>
+                            <a class="dropdown-item" href="/html/atemstillstand/atmung-pruefen.html">Atemstillstand</a>
+                            <a class="dropdown-item"
+                                href="/html/allergischer_schock/allergischerSchock.html">Allergischer Schock</a>
+                            <a class="dropdown-item" href="/html/verbrennung/verbrennung.html">Verbrennung</a>
+                            <a class="dropdown-item" href="/html/blutung/blutung.html">Blutung</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -60,6 +63,7 @@
         </div>
     </header>
     <main>
+        
         <section class="intro-text">
             <h2>Emergency-Management-App</h2>
             <p>Die EMMA-App hilft Ihnen dabei, in einer Notfallsituation schnell die richtigen Maßnahmen zu ergreifen.
@@ -70,6 +74,25 @@
                 benutzen und speichern Sie sich EMMA am Besten als Lesezeichen in Ihrem Browser, damit Sie sie schnell
                 zur Hand haben, wenn Sie sie einmal brauchen sollten! </p>
         </section>
+        
+        <p class="collapsable-text">
+            <a class="btn collapsable-text-custom" data-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Was ist EMMA?
+            </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <h2>Emergency-Management-App</h2>
+            <p>Die EMMA-App hilft Ihnen dabei, in einer Notfallsituation schnell die richtigen Maßnahmen zu ergreifen.
+                Wählen Sie hier einfach aus um welche Notfall-Situation es sich handelt, und EMMA führt Sie Schritt für
+                Schritt durch die Situation. Wir helfen Ihnen bei der Ersten Hilfe, dem Alarmieren des Notrufs und
+                begleiten Sie bis zum Eintreffen der Rettungskräfte. <br> Wenn Sie über EMMA gestolpert sind ohne das
+                ein Notfall vorliegt können Sie die folgenden Seiten gerne zum auffrischen Ihres Erste-Hilfe-Wissens
+                benutzen und speichern Sie sich EMMA am Besten als Lesezeichen in Ihrem Browser, damit Sie sie schnell
+                zur Hand haben, wenn Sie sie einmal brauchen sollten! </p>
+            </div>
+        </div>
         <section class="container">
             <h2>Welche Notsituation liegt vor?</h2>
             <div class="row">
@@ -127,9 +150,9 @@
             </div>
         </section>
         <section class="seperator">
-            <img src="/images/heart emma.png" alt="EMMA-Logo">
-            <img src="/images/heartwave1.png" alt="EKG-Welle">
-            <img src="/images/heart emma.png" alt="EMMA-Logo">
+            <img src="/images/heart emma.png" id="heart" alt="EMMA-Logo">
+            <img src="/images/heartwave1.png" id="ekg" alt="EKG-Welle">
+            <img src="/images/heart emma.png" id="heart" alt="EMMA-Logo">
         </section>
 
         <section class="course-add">
