@@ -23,7 +23,9 @@ a{
 .navbar-custom{
     background-color: var(--darkBlue);
 }
-
+nav img{
+    width:1.5em;
+}
 
 .menu-bar{
     display: flex;
