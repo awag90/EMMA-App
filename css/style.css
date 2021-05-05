@@ -66,6 +66,7 @@ nav img{
 
 .logo-field{
     display: flex;
+    margin-top: 3.5em;
     justify-content: flex-start;
     background-color: var(--lightBlue);
 }
@@ -212,7 +213,7 @@ nav img{
 
   @media (max-width: 992px){
     .seperator {
-        display:none;
+        display: none;
     }
 
     .course-add{
@@ -220,7 +221,7 @@ nav img{
     }
 
     .intro-text{
-        display:none;
+        display: none;
     }
 
     .collapsable-text{
