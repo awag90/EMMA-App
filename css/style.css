@@ -2,7 +2,6 @@
     --red:#C71010;
     --white:#f3f8fe;
     --lightBlue:#457B9D;
-    --lightBlueHover: #4f8bb1;
     --darkBlue:#1D3557;
     --grey:#554F4A;
 }
@@ -20,27 +19,6 @@ a{
 }
 
 /* HEADER */
-
-.navbar-custom{
-    background-color: var(--darkBlue);
-}
-.collapsable-text-custom{
-    color: var(--white);
-    background-color: var(--red);
-}
-
-nav img{
-    width:1.5em;
-}
-.dropdown-menu, .dropdown-item{
-    background-color: var(--lightBlue);
-    color: var(--white);
-}
-.dropdown-menu a:hover{
-    background-color: var(--lightBlueHover);
-    color: var(--white);
-}
-
 .menu-bar{
     display: flex;
     justify-content: flex-end;
@@ -66,7 +44,6 @@ nav img{
 
 .logo-field{
     display: flex;
-    margin-top: 3.5em;
     justify-content: flex-start;
     background-color: var(--lightBlue);
 }
@@ -132,11 +109,6 @@ nav img{
     width: 10em;
 }
 
-.nav-links ul li a{
-    color: var(--grey);
-    text-decoration: none;
-}
-
 .social-media ul{
     padding-inline-start: 0;
     display:flex;
@@ -172,7 +144,6 @@ nav img{
  }
  
  .BUTTON_NOTRUF {
-     margin-top: 1.5em;
      -webkit-border-radius: 20px;
      -moz-border-radius: 20px;
      border-radius: 20px;
@@ -205,62 +176,3 @@ nav img{
      text-align: center; 
   }
  
-  .collapsable-text{
-      visibility: hidden;
-  }
-
-  
-
-  @media (max-width: 992px){
-    .seperator {
-        display: none;
-    }
-
-    .course-add{
-        margin-top: 5em;
-    }
-
-    .intro-text{
-        display: none;
-    }
-
-    .collapsable-text{
-        visibility: visible;
-        text-align: center;
-        margin-top:2em;
-    }
-  }
-
-  /*BOOTSTRAP-ROWS AND COLUMNS*/
-  .col-sm img{
-    width: 25em;
-}
-
-.row{
-    margin-top: 1.5em;
-}
-
-/* PANELS*/
-.MAIN_PANEL{
-  background-color: var(--lightBlue);
-  width: 15em;
-  height: 15em;
-  color: var(--red);
-  font-size: 24pt;
-}
-
-.MAIN_PANEL img{
-  width: 11em;
-  height:11em;
-}
-
-/*SEPERATOR*/
-
-.seperator{
-    display:flex;
-    align-items:center;
-    justify-content: space-evenly;
-}
-#heartwave img{
-    width: 35em;
-}

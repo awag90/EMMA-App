@@ -6,63 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMMA | Die Web-App für den Notfall</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="/css/style.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
 </head>
 
 <body>
-
     <header>
-        <nav class="navbar fixed-top navbar-custom navbar-dark navbar-expand-lg ">
-            <a class="navbar-brand" href="#"><img src="/images/heart emma.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/html/index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Notsituationen
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/html/atemnot/aufsetzen.html">Atemnot</a>
-                            <a class="dropdown-item"
-                                href="/html/atemstillstand/atmung-pruefen.html">Bewusstlosigkeit</a>
-                            <a class="dropdown-item" href="/html/atemstillstand/atmung-pruefen.html">Atemstillstand</a>
-                            <a class="dropdown-item"
-                                href="/html/allergischer_schock/allergischerSchock.html">Allergischer Schock</a>
-                            <a class="dropdown-item" href="/html/verbrennung/verbrennung.html">Verbrennung</a>
-                            <a class="dropdown-item" href="/html/blutung/blutung.html">Blutung</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/html/kontakt.html">Kontakt</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/html/feedback.html">Feedback</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div class="menu-bar">
+            <button><img src="/images/burger_menu.png" alt="Menü"></button>
+        </div>
         <div class="logo-field">
             <a href="/html/index.html"><img src="/images/logo (1).png" alt="EMMA Logo"></a>
             <p><span>"Damit Sie das richtige tun -</span><br> im richtigen Moment"</p>
         </div>
     </header>
     <main>
-
         <section class="intro-text">
             <h2>Emergency-Management-App</h2>
             <p>Die EMMA-App hilft Ihnen dabei, in einer Notfallsituation schnell die richtigen Maßnahmen zu ergreifen.
@@ -73,96 +30,54 @@
                 benutzen und speichern Sie sich EMMA am Besten als Lesezeichen in Ihrem Browser, damit Sie sie schnell
                 zur Hand haben, wenn Sie sie einmal brauchen sollten! </p>
         </section>
-
-        <p class="collapsable-text">
-            <a class="btn collapsable-text-custom" data-toggle="collapse" href="#collapseExample" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
-                Was ist EMMA?
-            </a>
-        </p>
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                <h2>Emergency-Management-App</h2>
-                <p>Die EMMA-App hilft Ihnen dabei, in einer Notfallsituation schnell die richtigen Maßnahmen zu
-                    ergreifen.
-                    Wählen Sie hier einfach aus um welche Notfall-Situation es sich handelt, und EMMA führt Sie Schritt
-                    für
-                    Schritt durch die Situation. Wir helfen Ihnen bei der Ersten Hilfe, dem Alarmieren des Notrufs und
-                    begleiten Sie bis zum Eintreffen der Rettungskräfte. <br> Wenn Sie über EMMA gestolpert sind ohne
-                    das
-                    ein Notfall vorliegt können Sie die folgenden Seiten gerne zum auffrischen Ihres Erste-Hilfe-Wissens
-                    benutzen und speichern Sie sich EMMA am Besten als Lesezeichen in Ihrem Browser, damit Sie sie
-                    schnell
-                    zur Hand haben, wenn Sie sie einmal brauchen sollten! </p>
-            </div>
-        </div>
-        <section class="container">
+        <section class="main-menu">
             <h2>Welche Notsituation liegt vor?</h2>
             <div class="row">
-                <div class="col-sm">
-                    <a href="/html/atemnot/aufsetzen.html">
-                        <div class="MAIN_PANEL btn">
-                            <img src="/images/Atemnot.png" alt="Atemnot">Atemnot
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="/html/atemstillstand/bewusstsein-pruefen.html">
-                        <div class="MAIN_PANEL btn">
-                            <img src="/images/bewusstlosigkeit.png" alt="Bewusstlosigkeit">Bewusstlosigkeit
-                        </div>
-                    </a>
-                </div>
+                <a href="stepTemplate.html">
+                    <div class="MAIN_PANEL">
+                        <img src="/images/Atemnot.png" alt="Atemnot">Atemnot
+                    </div>
+                </a>
+                <a href="/html/atemstillstand/bewusstsein-pruefen.html">
+                    <div class="MAIN_PANEL">
+                        <img src="/images/bewusstlosigkeit.png" alt="Bewusstlosigkeit">Bewusstlosigkeit
+                    </div>
+                </a>
             </div>
 
             <div class="row">
-                <div class="col-sm">
-                    <a href="/html/atemstillstand/bewusstsein-pruefen.html">
-                        <div class="MAIN_PANEL btn">
-                            <img src="/images/Atemstillstand.png" alt="Atemstillstand">Atemstillstand
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="/html/allergischer_schock/allergischerSchock.html">
-                        <div class="MAIN_PANEL btn">
-                            <img src="/images/AllesJuckt.png" alt="Allergische Reaktion">Allergischer Schock
-                        </div>
-                    </a>
-                </div>
+                <a href="/html/atemstillstand/bewusstsein-pruefen.html">
+                    <div class="MAIN_PANEL">
+                        <img src="/images/Atemstillstand.png" alt="Atemstillstand">Atemstillstand
+                    </div>
+                </a>
+                <a href="/html/allergischer_schock/allergischerSchock.html">
+                    <div class="MAIN_PANEL">
+                        <img src="/images/AllesJuckt.png" alt="Allergische Reaktion">Allergischer Schock
+                    </div>
+                </a>
             </div>
 
             <div class="row">
-                <div class="col-sm">
-                    <a href="/html/verbrennung/verbrennung.html">
-                        <div class="MAIN_PANEL btn">
-                            <img src="/images/Verbrennung.png" alt="Verbrennung">Verbrennung
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="/html/blutung/blutung.html">
-                        <div class="MAIN_PANEL btn">
-                            <img src="/images/Blutung.png" alt="Blutung">Blutung
-                        </div>
-                    </a>
-                </div>
+                <a href="/html/verbrennung/verbrennung.html">
+                    <div class="MAIN_PANEL">
+                        <img src="/images/Verbrennung.png" alt="Verbrennung">Verbrennung
+                    </div>
+                </a>
+                <a href="/html/blutung/blutung.html">
+                    <div class="MAIN_PANEL">
+                        <img src="/images/Blutung.png" alt="Blutung">Blutung
+                    </div>
+                </a>
             </div>
             <div class="emergency-button">
                 <a href="tel:112" class="BUTTON_NOTRUF">Notruf wählen!</a>
             </div>
         </section>
         <section class="seperator">
-                <div class="column">
-                    <img src="/images/heart emma.png" id="heart" alt="EMMA-Logo">
-                </div>
-                <div class="column" id="heartwave">
-                    <img src="/images/heartwave1.png" id="ekg" alt="EKG-Welle">
-                </div>
-                <div class="column">
-                    <img src="/images/heart emma.png" id="heart" alt="EMMA-Logo">
-                </div>
-            </div>
+            <img src="/images/heart emma.png" alt="EMMA-Logo">
+            <img src="/images/heartwave1.png" alt="EKG-Welle">
+            <img src="/images/heart emma.png" alt="EMMA-Logo">
         </section>
 
         <section class="course-add">
@@ -195,7 +110,7 @@
             <nav>
                 <ul>
                     <li><a>Impressum</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a>Kontakt</a></li>
                     <li><a>Forum</a></li>
                 </ul>
             </nav>
