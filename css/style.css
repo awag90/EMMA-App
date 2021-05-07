@@ -82,6 +82,13 @@ nav img{
     font-size: largee;
     color: var(--white);
 }
+/*TO-DO*/
+.intro-text{
+    text-align: center;
+}
+.container h2{
+    text-align: center;;
+}
 
 /* ERSTE HILFE ADD */
 
@@ -236,15 +243,15 @@ nav img{
     width: 25em;
 }
 
-.row{
-    margin-top: 1.5em;
+.col-sm{
+    margin-top:1.5em;
 }
 
 /* PANELS*/
 .MAIN_PANEL{
   background-color: var(--lightBlue);
   width: 15em;
-  height: 15em;
+  height: 13em;
   color: var(--red);
   font-size: 24pt;
 }
@@ -252,6 +259,12 @@ nav img{
 .MAIN_PANEL img{
   width: 11em;
   height:11em;
+}
+
+.emergency-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /*SEPERATOR*/
