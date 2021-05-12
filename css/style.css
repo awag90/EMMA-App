@@ -258,6 +258,10 @@ nav img{
   font-size: 24pt;
 }
 
+.MAIN_PANEL img{
+    max-height: 11em;
+}
+
 .emergency-button{
     display: flex;
     align-items: center;
