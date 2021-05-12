@@ -308,13 +308,13 @@ nav img{
 }
 
 .option{
-    display: block;
-    margin: 1em 0.75em;
-    background-color: var(--darkBlue);
-    padding: 2.5em;
-    border-radius: 20px;
+    margin: 1em 0.75em;    
 }
 
 .option a{
-    color: var(--white)
+    display: block;
+    padding: 2.5em;
+    border-radius: 20px;
+    color: var(--white);
+    background-color: var(--darkBlue);
 }
