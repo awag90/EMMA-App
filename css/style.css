@@ -216,29 +216,8 @@ nav img{
       visibility: hidden;
   }
 
-  
 
-  @media (max-width: 992px){
-    .seperator {
-        display: none;
-    }
-
-    .course-add{
-        margin-top: 5em;
-    }
-
-    .intro-text{
-        display: none;
-    }
-
-    .collapsable-text{
-        visibility: visible;
-        text-align: center;
-        margin-top:2em;
-    }
-  }
-
-  /*BOOTSTRAP-ROWS AND COLUMNS*/
+/*BOOTSTRAP-ROWS AND COLUMNS*/
 
 
 .col-sm{
@@ -275,6 +254,27 @@ nav img{
     align-items:center;
     justify-content: space-evenly;
 }
+
+@media (max-width: 992px){
+    .seperator {
+        display: none;
+    }
+
+    .course-add{
+        margin-top: 5em;
+    }
+
+    .intro-text{
+        display: none;
+    }
+
+    .collapsable-text{
+        visibility: visible;
+        text-align: center;
+        margin-top:2em;
+    }
+  }
+
 #heartwave img{
     width: 35em;
 }
