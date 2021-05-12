@@ -239,26 +239,23 @@ nav img{
   }
 
   /*BOOTSTRAP-ROWS AND COLUMNS*/
-  .col-sm img{
-    width: 25em;
-}
+
 
 .col-sm{
     margin-top:1.5em;
 }
 
+.img-fluid{
+    max-width: 90%;
+}
+
 /* PANELS*/
 .MAIN_PANEL{
   background-color: var(--lightBlue);
-  width: 15em;
-  height: 13em;
+  max-width: 15em;
+  max-height: 13em;
   color: var(--red);
   font-size: 24pt;
-}
-
-.MAIN_PANEL img{
-  width: 11em;
-  height:11em;
 }
 
 .emergency-button{
