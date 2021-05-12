@@ -87,8 +87,9 @@ nav img{
 .intro-text{
     text-align: center;
 }
+
 .container h2{
-    text-align: center;;
+    text-align: center;
 }
 
 /* ERSTE HILFE ADD */
@@ -299,5 +300,21 @@ nav img{
     display: flex;
     justify-content: center;
 }
-/*Options*/
 
+/*Options*/
+.options{
+    display: flex;
+    justify-content: center;
+}
+
+.option{
+    display: block;
+    margin: 1em 0.75em;
+    background-color: var(--darkBlue);
+    padding: 2.5em;
+    border-radius: 20px;
+}
+
+.option a{
+    color: var(--white)
+}
