@@ -163,6 +163,7 @@ nav img{
 /* BUTTONS */
 
 .BUTTON_NEXT_BACK {
+    margin: 1em 0.75em;
     -webkit-border-radius: 32px;
     -moz-border-radius: 32px;
     border-radius: 32px;
@@ -292,3 +293,11 @@ nav img{
 #heartwave img{
     width: 35em;
 }
+
+/*Controls*/
+.controls{
+    display: flex;
+    justify-content: center;
+}
+/*Options*/
+
