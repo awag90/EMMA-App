@@ -301,6 +301,32 @@ nav img{
     justify-content: center;
 }
 
+/*Path-End*/
+.pathEnd{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--lightBlue);
+    text-align: center;
+    font-size: 12px;
+    padding: 1.5em 1em 2em 1em;
+    color: var(--white);
+    margin-top:3em;
+}
+.pathEnd h2{
+    font-size: 1.5em;
+    padding: 1em;
+}
+.pathEnd h2 span {
+    font-size: 2em;
+}
+.pathEnd .redHghlghts{
+    color:var(--darkBlue);
+    font-size: 1em;
+}
+
+
+
+
 /*Options*/
 .options{
     display: flex;
