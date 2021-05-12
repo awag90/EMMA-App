@@ -331,6 +331,7 @@ nav img{
 .options{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .option{
