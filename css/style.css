@@ -82,6 +82,7 @@ nav img{
     font-size: largee;
     color: var(--white);
 }
+
 /*TO-DO*/
 .intro-text{
     text-align: center;
@@ -178,7 +179,7 @@ nav img{
     text-align: center;
  }
  
- .BUTTON_NOTRUF {
+.BUTTON_NOTRUF {
      margin-top: 1.5em;
      -webkit-border-radius: 20px;
      -moz-border-radius: 20px;
@@ -196,7 +197,7 @@ nav img{
      text-align: center;
   }
  
- .BUTTON_FEEDBACK {
+.BUTTON_FEEDBACK {
      -webkit-border-radius: 20px;
      -moz-border-radius: 20px; 
      border-radius: 20px;
@@ -212,9 +213,7 @@ nav img{
      text-align: center; 
   }
  
-  .collapsable-text{
-      visibility: hidden;
-  }
+ 
 
 
 /*BOOTSTRAP-ROWS AND COLUMNS*/
@@ -227,6 +226,16 @@ nav img{
 .img-fluid{
     max-width: 90%;
 }
+
+/*Textfeld*/
+.collapsable-text{
+    visibility: hidden;
+}
+
+.collapse{
+    display: none;
+}
+
 
 /* PANELS*/
 .MAIN_PANEL{
@@ -272,6 +281,11 @@ nav img{
         visibility: visible;
         text-align: center;
         margin-top:2em;
+    }
+
+    .collapse{
+        display: block;
+        margin: 1.5em 0.1em;
     }
   }
 
