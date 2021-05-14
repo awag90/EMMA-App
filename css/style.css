@@ -258,6 +258,11 @@ nav img{
     justify-content: space-evenly;
 }
 
+.expand-anchor-field a{
+    display:block;
+    height: 25em;  
+}
+
 /*SEPERATOR*/
 
 .seperator{
@@ -288,6 +293,9 @@ nav img{
     .collapse{
         display: block;
         margin: 1.5em 0.1em;
+    }
+    .expand-anchor-field a{
+        height: 6em;  
     }
   }
 
