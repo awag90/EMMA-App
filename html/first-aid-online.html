@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/course.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -62,8 +63,36 @@
         </div>
     </header>
     <main>
+        <div class="container">
+            <div class="row course-intro">
+                <div class="course-intro-text col-sm">
+                    <h2>Erste-Hilfe Kurse mit EMMA</h2>
+                    <p>
+                        EMMA hilft dir in Notsituationen, doch selbst die beste App kann keinen Erste-Hilfe-Kurs
+                        ersetzten. Jeder Kurs besteht dabei aus zwei Teilen. Den Theorie-Teil absolvierst du von Zuhause
+                        über unsere Schlungsplattform. Dabei lernst du Alles was du über Erste-Hilfe wissen musst, über
+                        Lernvideos von professionellen Instruktoren und kannst im Anschluss dein wissen über kurze Tests
+                        überprüfen.<br>
+                        Dadurch kannst du dir selbst Einteilen, wann und wie schnell du lernen willst.
+                        Wenn du alle Tests abgeschlossen hast bekommst du ein Zertifakt, dass du dann einfach zum
+                        Praxis-Teil des Erste-Hilfe Kurses mitbringst. Dein Zugang zur Lernplattform bleibt jedoch
+                        dauerhaft aktiv, so dass du dir die Videos jederzeit nochmal anschauen kannst.<br><br>
+                        Im Praxis-Teil helfen dir unsere Instruktoren dann dabei dein erworbenes Wissen an Mimen und
+                        Reanimationspuppen anzuwenden. Dabei legen wir besonderen Wert auf kleine Gruppen, damit jeder
+                        Teilnehmer das Maximum aus dem Kurs mitnehmen kann.
+
+                    </p>
+                </div>
+                <img class="img-fluid col-sm" src="/images/erste-hilfe-kurs.jpg" alt="Erste-Hilfe Kurs mit EMMA">
+            </div>
+        </div>
         <form>
             <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Anmeldeformular</h3>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="form-group col-sm">
                         <label for="first-name">Vorname</label>
@@ -74,12 +103,36 @@
                         <input class="form-control" id="last-name" placeholder="Mustermann">
                     </div>
                 </div>
-                    <div class="row">
-                        <div class="form-group col-12">
-                            <label for="mail">E-Mail</label>
-                            <input class="form-control" id="mail" placeholder="max.mustermann@mail.de">
-                        </div>
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="mail">E-Mail</label>
+                        <input class="form-control" id="mail" placeholder="max.mustermann@mail.de">
                     </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="corse-type">Kurs-Art</label>
+                        <select class="form-control" id="course-type">
+                            <option>Erste-Hilfe für Führerschein</option>
+                            <option>Erste-Hilfe Auffrischer</option>
+                            <option>ACLS</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="date">Termin</label>
+                        <select class="form-control" id="date">
+                            <option>05.06.2021</option>
+                            <option>17.06.2021</option>
+                            <option>02.07.2021</option>
+                            <option>20.07.2021</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-btn">
+                <button class="BUTTON_NEXT_BACK col-4">Anmelden</button>
             </div>
         </form>
     </main>

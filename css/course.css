@@ -1,0 +1,25 @@
+:root{
+    --red:#C71010;
+    --white:#f3f8fe;
+    --lightBlue:#457B9D;
+    --lightBlueHover: #4f8bb1;
+    --darkBlue:#1D3557;
+    --grey:#554F4A;
+}
+
+.container{
+    margin-top: 2em;
+}
+
+.row{
+    margin-top: 1em;
+}
+
+.col-sm{
+    margin-top: 0;
+}
+
+/*Text-Block*/
+.course-intro-text h2{
+    margin-bottom: 1em;
+}

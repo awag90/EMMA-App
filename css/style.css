@@ -353,3 +353,9 @@ nav img{
     color: var(--white);
     background-color: var(--darkBlue);
 }
+
+/*Form-Button*/
+.form-btn{
+    display:flex;
+    justify-content: center;
+}
