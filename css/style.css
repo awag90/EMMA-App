@@ -283,6 +283,9 @@ nav img{
     .intro-text{
         display: none;
     }
+    .course-intro-text{
+        display:none;
+    }
 
     .collapsable-text{
         visibility: visible;
@@ -297,6 +300,7 @@ nav img{
     .expand-anchor-field a{
         height: 6em;  
     }
+    
   }
 
 #heartwave img{
@@ -359,3 +363,4 @@ nav img{
     display:flex;
     justify-content: center;
 }
+

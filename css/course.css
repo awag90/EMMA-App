@@ -23,3 +23,14 @@
 .course-intro-text h2{
     margin-bottom: 1em;
 }
+
+
+.carousel {
+    width:460px;
+    height:400px;
+    margin: auto;
+  }
+
+.container.first-aid{
+    margin-top:5em;
+}
