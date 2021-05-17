@@ -310,7 +310,27 @@ nav img{
 /*Controls*/
 .controls{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+@media(max-width: 574px){
+    .BUTTON_NEXT_BACK {
+        margin: 1em 0 1em 0;
+        -webkit-border-radius: 32px;
+        -moz-border-radius: 32px;
+        border-radius: 32px;
+        color: #1D3557;
+        font-family: Tahoma;
+        font-size: 40px;
+        font-weight: 100;
+        padding: 10px;
+        background-color: #C71010;
+        border: outset #337FED 6px;
+        text-decoration: none;
+        display: block;
+        cursor: pointer;
+        text-align: center;
+     }
 }
 
 /*Path-End*/
@@ -387,4 +407,19 @@ nav img{
 
 .step-text a{
     color: var(--red);
+}
+
+@media(max-width:574px){
+    .step{
+        border-radius: 0;
+        padding: 1em;
+    }
+
+    .step-text{
+        margin-top: 1em;
+    }
+
+    .step-img{
+        width: 100%;
+    }
 }
