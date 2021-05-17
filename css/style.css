@@ -364,3 +364,27 @@ nav img{
     justify-content: center;
 }
 
+/*Steps*/
+.step {
+    margin-top: 1.5em;
+    padding: 2em;
+    border-radius: 30px;
+    background-color: var(--darkBlue);
+}
+
+.step-img{
+    margin-top: 0;
+}
+.step-img img{
+    border-radius: 30px;
+}
+
+.step-text{
+    margin-top: 0;
+    color: var(--white);
+    font-size: 16pt;
+}
+
+.step-text a{
+    color: var(--red);
+}
