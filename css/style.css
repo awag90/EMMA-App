@@ -246,6 +246,7 @@ nav img{
   max-height: 13em;
   color: var(--red);
   font-size: 24pt;
+  border-radius: 80px;
 }
 
 .MAIN_PANEL img{
