@@ -410,11 +410,12 @@ nav img{
     margin-top: 0;
     color: var(--white);
     font-size: 16pt;
+    text-decoration: none;
 }
 
-/*.step-text a{
+.step-text span {
     color: var(--red);
-}*/
+}
 
 @media(max-width:574px){
     .step{
