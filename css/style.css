@@ -400,15 +400,21 @@ nav img{
     border-radius: 30px;
 }
 
-.step-text{
+.step-text {
     margin-top: 0;
     color: var(--white);
     font-size: 16pt;
 }
 
-.step-text a{
-    color: var(--red);
+.step-text a {
+    margin-top: 0;
+    color: var(--white);
+    font-size: 16pt;
 }
+
+/*.step-text a{
+    color: var(--red);
+}*/
 
 @media(max-width:574px){
     .step{
