@@ -68,15 +68,39 @@
         <form>
            <h1 class="text-primary">Kontaktformular</h1>
           <div class="formgroup">
-            <label for="titel">Betreff:</label>
+            <label for="titel">Betreff</label>
             <input class="form-control" type="text" id="titel" name="titel" maxlength="100">
           </div>
-          <div class="formgroup">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Vorname</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Vorname">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Nachname</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Nachname">
+            </div>
+          </div>
+          <fieldset class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm pt-0"><b>Datenschutzhinweis:</b> Ihre Daten werden ausschließlich zur Erzeugung Ihrer Datenschutzerklärung genutzt. Die Daten werden nicht an Dritte weitergegeben.</legend>
+            </div>  
+            <div class="row">
+            <div class="col-sm-10">
+                <div class="form-check pt-2">
+                  <input class="form-check-input " type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                  <label class="form-check-label" for="gridRadios1">
+                    Einverstanden
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="formgroup pt-2">
             <label for="content">Ihre Nachricht an uns:</label>
             <textarea class="form-control" name="content" rows="8" cols="80"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-          <a class="btn btn-secondary" href="https://www.google.com">Help</a>
+          <button type="submit" class="BUTTON_NEXT_BACK">Submit</button>
         </form>
       </div>
 
@@ -104,7 +128,7 @@
         <div class="nav-links">
             <nav>
                 <ul>
-                    <li><a>Impressum</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
                     <li><a href="kontakt.html">Kontakt</a></li>
                     <li><a href="feedback.html">Feedback</a></li>
                 </ul>
