@@ -16,6 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+    <script src="/javascript/script.js"></script>
 </head>
 
 <body>
@@ -182,7 +183,11 @@
                 </div>
             </div>
             <div class="form-btn">
-                <button class="BUTTON_NEXT_BACK col-4">Anmelden</button>
+                <button class="BUTTON_NEXT_BACK col-4" onclick="signedUp()">Anmelden</button>
+            </div>
+            <div id="signUp" class="tabcontent">
+                <h3>Vielen Dank für Ihre Anmeldung!</h3>
+                <p>Sie erhalten in Kürze einen Bestätigungslink mit näheren Informationen.</p>
             </div>
         </form>
     </main>
