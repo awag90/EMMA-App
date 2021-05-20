@@ -209,6 +209,7 @@ nav img{
      font-size: 58px;
      font-weight: 400;
      padding: 40px;
+     margin:auto;
      background-color: var(--darkBlue);
      text-decoration: none;
      display: inline-block;
@@ -256,6 +257,7 @@ nav img{
 
 .emergency-button{
     display: flex;
+    margin-bottom:3em;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -275,6 +277,22 @@ nav img{
     display:flex;
     align-items:center;
     justify-content: space-evenly;
+}
+
+@media (min-width:574px){
+   .pathEnd{
+       margin:7em;
+       border-radius:40px;
+   }
+   .BUTTON_FEEDBACK{
+    max-width: 12em;
+   }
+}
+@media(min-width:827px){
+    .pathEnd{
+        max-width:50em;
+        margin:auto;
+    }
 }
 
 @media (max-width: 992px){
