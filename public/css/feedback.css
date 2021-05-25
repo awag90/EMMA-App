@@ -1,0 +1,26 @@
+table{
+    margin-top: 1em ;
+    margin-bottom: 1em;
+}
+
+tr td{
+    padding: 1em 1em 1em 0;
+}
+
+.question{
+    width: 20%;
+    padding-right: 2em;
+}
+
+.radio-label{
+    font-weight: bold;
+}
+
+.formgroup{
+    margin-bottom: 1em;
+}
+
+main{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
