@@ -101,9 +101,11 @@ nav img{
     text-align: center;
     padding: 1.5em 2em 4em 2em;
     color: var(--white);
+    margin-top:3em;
 }
 .big-blue-block p{
     margin:0 2em 3.5em 2em;
+    font-size: 1.5rem;
 }
 .big-blue-block a{
     color: var(--white);
@@ -111,12 +113,14 @@ nav img{
     font-weight: bold;
     padding: 1em 1.5em;
     border-radius: 2em;
+    
 }
 
 /* FOOTER */
 
  footer{
      background-color: var(--lightBlue);
+    
  }
 
 .footer-logo{
@@ -171,7 +175,7 @@ nav img{
     border-radius: 32px;
     color: #1D3557;
     font-family: Tahoma;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 100;
     padding: 25px;
     background-color: #C71010;
@@ -180,6 +184,8 @@ nav img{
     display: inline-block;
     cursor: pointer;
     text-align: center;
+    min-width: 5em;
+    max-width: 12em;
  }
  
 .BUTTON_NOTRUF {
@@ -217,7 +223,12 @@ nav img{
      text-align: center; 
   }
  
- 
+.BUTTON_ONLINE{
+    max-width: 12em;
+    min-width: 5em;
+    margin: auto;
+    font-size: 2em;
+}
 
 
 /*BOOTSTRAP-ROWS AND COLUMNS*/
@@ -280,18 +291,28 @@ nav img{
 }
 
 @media (min-width:574px){
-   .pathEnd{
+   .pathEnd, .course-add{
        margin:7em;
        border-radius:40px;
    }
-   .BUTTON_FEEDBACK{
-    max-width: 12em;
+   .big-blue-block{
+       border-radius: 40px;
    }
+   .BUTTON_FEEDBACK .BUTTON_ONLINE{
+    max-width: 2em;
+   }
+   
 }
 @media(min-width:827px){
-    .pathEnd{
+    .pathEnd, .course-add{
         max-width:50em;
         margin:auto;
+    }
+    .footer{
+        margin-top: 10em;
+    }
+    .big-blue-block{
+        margin-bottom: 3em;
     }
 }
 
@@ -299,7 +320,7 @@ nav img{
     .seperator {
         display: none;
     }
-
+    
     .course-add{
         margin-top: 5em;
     }

@@ -71,7 +71,11 @@
   <main>
     <div class="container">
       <form>
-        <h1 class="text-primary">Kontaktformular</h1>
+        <div class="row">
+          <div class="col-12">
+              <h3>Kontakformular</h3>
+          </div>
+      </div>
         <div class="formgroup">
           <label for="titel">Betreff</label>
           <input class="form-control" type="text" id="titel" name="titel" maxlength="100">
@@ -102,7 +106,9 @@
           <label for="content">Ihre Nachricht an uns:</label>
           <textarea class="form-control" id="content" rows="8" cols="80"></textarea>
         </div>
-        <button type="submit" class="BUTTON_NEXT_BACK">Submit</button>
+        <div class="form-btn">
+          <button class="BUTTON_NEXT_BACK col-3">Senden</button>
+      </div>
       </form>
     </div>
   </main>
