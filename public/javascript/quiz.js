@@ -7,8 +7,13 @@ function select(evt, exclusive) {
         evt.currentTarget.classList.add("selected");
         evt.currentTarget.classList.remove("unselected")
     } else {
-        evt.currentTarget.classList.add("selected");
-        evt.currentTarget.classList.remove("unselected")
+        if (evt.currentTarget.classList.contains("unselected")){
+            evt.currentTarget.classList.add("selected");
+            evt.currentTarget.classList.remove("unselected");
+        }else{
+            evt.currentTarget.classList.add("unselected");
+            evt.currentTarget.classList.remove("selected");
+        }
     }
 }
 
