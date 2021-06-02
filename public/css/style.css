@@ -475,3 +475,30 @@ nav img{
         width: 100%;
     }
 }
+
+
+
+/*Question/Answers*/
+
+.fragen-counter{
+    color: var(--red);
+}
+
+.answers{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.answer{
+    margin: 1em 0.75em;    
+}
+
+.answer a{
+    display: block;
+    padding: 2.5em;
+    border-radius: 20px;
+    color: var(--white);
+    background-color: var(--darkBlue);
+}
