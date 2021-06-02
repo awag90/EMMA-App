@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/forms.css" rel="stylesheet">
+    <link href="../css/quiz.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../javascript/quiz.js"></script>
 
 </head>
 
@@ -79,8 +80,8 @@
             <h2>EMMA-Quiz</h2>
             <p>Nutzen Sie unser EMMA-Quiz um Ihr Wissen rund um die Themen Atemnot, Atemstillstand, Bewusstlosigkeit
                 Verbrennung, Allergien und Blutung zu testen!<br>
-            Wir geben Ihnen Feedback, ob Sie als "Retter in der Not" glänzen würden oder ob eventuell doch
-            noch etwas Schulungsbedarf besteht.
+                Wir geben Ihnen Feedback, ob Sie als "Retter in der Not" glänzen würden oder ob eventuell doch
+                noch etwas Schulungsbedarf besteht.
             </p>
         </section>
 
@@ -93,39 +94,34 @@
         <div class="collapse" id="collapseExample">
             <div class="card card-body">
                 <h2>EMMA-Quiz</h2>
-            <p>Nutzen Sie unser EMMA-Quiz um Ihr Wissen rund um die Themen Atemnot, Atemstillstand, Bewusstlosigkeit
-                Verbrennung, Allergien und Blutung zu testen!<br>
-            Wir geben Ihnen Feedback, ob Sie als "Retter in der Not" glänzen würden oder ob eventuell doch
-            noch etwas Schulungsbedarf besteht.
-            </p>
+                <p>Nutzen Sie unser EMMA-Quiz um Ihr Wissen rund um die Themen Atemnot, Atemstillstand, Bewusstlosigkeit
+                    Verbrennung, Allergien und Blutung zu testen!<br>
+                    Wir geben Ihnen Feedback, ob Sie als "Retter in der Not" glänzen würden oder ob eventuell doch
+                    noch etwas Schulungsbedarf besteht.
+                </p>
             </div>
         </div>
-        <div class="container">
-            <div class="fragen-counter">
-                <h4>Frage: x/11</h4>
-            </div>
-            <div class="row step">
-                <div class="col-sm step-text">
-                    <h3>Frage</h3>
+        <div class="frage" id="template">
+            <div class="container">
+                <div class="fragen-counter">
+                    <h4>Frage: x/11</h4>
+                </div>
+                <div class="row step">
+                    <div class="col-sm step-text">
+                        <h3>Frage</h3>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="answers">
-            <div class="answer">
-                <a href="../../html/atemstillstand/atmung-pruefen.html">Antwort1</a>
-            </div>
-            <div class="answer">
-                <a href="../../html/atemstillstand/hilfe-rufen.html">Antwort2</a>
-            </div>
-            <div class="answer">
-                <a href="../../html/allergischer_schock/allergischerSchock4.html">Antwort3</a>
+            <div class="answers">
+                <button onclick="select(event, true)" class="answer unselected">Antwort1</button>
+                <button onclick="select(event, true)" class="answer unselected">Antwort2</button>
+                <button onclick="select(event, true)" class="answer unselected">Antwort3</button>
             </div>
         </div>
 
         <div class="controls">
-            <a href="../../html/allergischer_schock/allergischerSchock.html"
-                class="BUTTON_NEXT_BACK text-decoration-none">Zurück</a>
+            <button class="BUTTON_NEXT_BACK text-decoration-none">Absenden</button>
 
         </div>
     </main>

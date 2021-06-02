@@ -1,0 +1,30 @@
+/*Question/Answers*/
+
+.fragen-counter{
+    color: var(--red);
+}
+
+.answers{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.answer{
+    display: block;
+    width: 30%;
+    padding: 2.5em;
+    border-radius: 20px;
+    color: var(--white);
+    margin-top: 1.5em;
+}
+
+.unselected{
+    background-color: var(--darkBlue);
+}
+
+.selected{
+    background-color: var(--lightBlue);
+}
