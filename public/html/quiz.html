@@ -101,7 +101,7 @@
                 </p>
             </div>
         </div>
-        <div class="frage" id="template">
+        <div class="question" id="template">
             <div class="container">
                 <div class="fragen-counter">
                     <h4>Frage: x/11</h4>
@@ -114,14 +114,14 @@
             </div>
 
             <div class="answers">
-                <button onclick="select(event, true)" class="answer unselected">Antwort1</button>
-                <button onclick="select(event, true)" class="answer unselected">Antwort2</button>
-                <button onclick="select(event, true)" class="answer unselected">Antwort3</button>
+                <button onclick="select(event, false)" class="answer unselected true">Antwort1</button>
+                <button onclick="select(event, false)" class="answer unselected true">Antwort2</button>
+                <button onclick="select(event, false)" class="answer unselected">Antwort3</button>
             </div>
         </div>
 
         <div class="controls">
-            <button class="BUTTON_NEXT_BACK text-decoration-none">Absenden</button>
+            <button onclick="check()" class="BUTTON_NEXT_BACK text-decoration-none">Absenden</button>
 
         </div>
     </main>
