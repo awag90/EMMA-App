@@ -1,3 +1,21 @@
+
+const questionContainer = document.getElementById("question-section")
+const answersContainer = document.getElementById("answers-section")
+const nextButton = document.getElementById("next-button")
+
+const questionElement = document.getElementById("question")
+const answerButtonsElement = document.getElementById("answer-buttons")
+
+let startButton = document.getElementById("start-button")
+startButton.addEventListener("click",startQuiz)
+
+function startQuiz(){
+    startButton.classList.add("hide")
+    questionContainer.classList.remove("hide")
+    answersContainer.classList.remove("hide")
+    nextButton.classList.remove("hide")
+}
+
 function select(evt, exclusive) {
     if (exclusive == true) {
         for (let ele of document.querySelectorAll(".selected")) {
@@ -40,3 +58,27 @@ function check() {
     alert("Du hast " + points + " Punkte");
 
 }
+
+/*WORK IN PROGRESS
+const questions = [
+    {
+        question: 'Welcher Rhythmus zwischen Thoraxkompressionen und Beatmung sollte bei'
+         + 'der Reanimation angewandt werden?',
+        answers: [
+            { text: '30:2', correct:true },
+            { text: '100:20', correct:false }
+        ]
+
+
+    }
+
+]
+
+function setNextQuestion(){
+    
+}
+
+function showQuestion(question){
+    
+}
+*/

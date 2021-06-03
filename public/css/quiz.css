@@ -1,4 +1,11 @@
 /*Question/Answers*/
+#start-button{
+    margin:5em;
+}
+
+#quiz-block{
+    margin-bottom:2em;
+}
 
 .fragen-counter{
     color: var(--red);
@@ -27,4 +34,8 @@
 
 .selected{
     background-color: var(--lightBlue);
+}
+
+.hide {
+    display: none;
 }
