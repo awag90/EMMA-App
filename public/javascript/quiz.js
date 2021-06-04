@@ -1,20 +1,6 @@
-
-const questionContainer = document.getElementById("question-section")
-const answersContainer = document.getElementById("answers-section")
-const nextButton = document.getElementById("next-button")
-
-const questionElement = document.getElementById("question")
-const answerButtonsElement = document.getElementById("answer-buttons")
-
-let startButton = document.getElementById("start-button")
-startButton.addEventListener("click",startQuiz)
-
-function startQuiz(){
-    startButton.classList.add("hide")
-    questionContainer.classList.remove("hide")
-    answersContainer.classList.remove("hide")
-    nextButton.classList.remove("hide")
-}
+let questionCounter = 0;
+let points = 0;
+const maxQuestion = 1;
 
 function select(evt, exclusive) {
     if (exclusive == true) {
@@ -25,10 +11,10 @@ function select(evt, exclusive) {
         evt.currentTarget.classList.add("selected");
         evt.currentTarget.classList.remove("unselected")
     } else {
-        if (evt.currentTarget.classList.contains("unselected")){
+        if (evt.currentTarget.classList.contains("unselected")) {
             evt.currentTarget.classList.add("selected");
             evt.currentTarget.classList.remove("unselected");
-        }else{
+        } else {
             evt.currentTarget.classList.add("unselected");
             evt.currentTarget.classList.remove("selected");
         }
@@ -37,48 +23,36 @@ function select(evt, exclusive) {
 
 function check() {
     let trueAnswers = 0;
-    let points = 0;
-    for (let ele of document.querySelectorAll(".answer")) {
+    let questionPoints = 0;
+    let answers = document.querySelectorAll("#question" + questionCounter + " .answer");
+    for (let ele of answers) {
         if (ele.classList.contains("true")) {
             trueAnswers++;
         }
     }
 
-    for (let ele of document.querySelectorAll(".answer")) {
+    for (let ele of answers) {
         if (ele.classList.contains("true") && ele.classList.contains("selected")) {
-            points += 10 / trueAnswers;
+            questionPoints += 10 / trueAnswers;
         } else if (ele.classList.contains("selected") && (points > 0)) {
-            if (points >= 10 / trueAnswers) {
-                points -= 10 / trueAnswers;
+            if (questionPoints >= 10 / trueAnswers) {
+                questionPoints -= 10 / trueAnswers;
             } else {
-                points = 0;
+                questionPoints = 0;
             }
         }
     }
+
+    points += questionPoints;
     alert("Du hast " + points + " Punkte");
 
 }
 
-/*WORK IN PROGRESS
-const questions = [
-    {
-        question: 'Welcher Rhythmus zwischen Thoraxkompressionen und Beatmung sollte bei'
-         + 'der Reanimation angewandt werden?',
-        answers: [
-            { text: '30:2', correct:true },
-            { text: '100:20', correct:false }
-        ]
-
-
+function advance() {
+    check();
+    if (questionCounter < maxQuestion) {
+        document.querySelector("#question" + questionCounter).classList.remove("active");
+        questionCounter++;
+        document.querySelector("#question" + questionCounter).classList.add("active");
     }
-
-]
-
-function setNextQuestion(){
-    
 }
-
-function showQuestion(question){
-    
-}
-*/

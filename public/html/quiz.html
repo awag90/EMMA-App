@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-    
+
 
 </head>
 
@@ -103,30 +103,50 @@
         </div>
         <div id="quiz-block">
             <div class="container">
-                <div class="question-section hide" id="question-section">
+                <div class="question active" id="question0">
                     <div class="fragen-counter">
-                        <h4>Frage: x/11</h4>
+                        <h4>Frage: 0/11</h4>
                     </div>
                     <div class="row step">
                         <div class="col-sm step-text" id="question-container">
                             <div id="question">Frage</div>
                         </div>
                     </div>
+
+                    <div class="answers" id="answers-section">
+                        <button onclick="select(event, false)" class="answer unselected true"
+                            id="answer-buttons">Antwort1</button>
+                        <button onclick="select(event, false)" class="answer unselected true"
+                            id="answer-buttons">Antwort2</button>
+                        <button onclick="select(event, false)" class="answer unselected"
+                            id="answer-buttons">Antwort3</button>
+                    </div>
                 </div>
 
-                <div class="answers hide" id="answers-section">
-                    <button onclick="select(event, false)" class="answer unselected true"
-                        id="answer-buttons">Antwort1</button>
-                    <button onclick="select(event, false)" class="answer unselected true"
-                        id="answer-buttons">Antwort2</button>
-                    <button onclick="select(event, false)" class="answer unselected"
-                        id="answer-buttons">Antwort3</button>
+                <div class="question" id="question1">
+                    <div class="fragen-counter">
+                        <h4>Frage: 1/11</h4>
+                    </div>
+                    <div class="row step">
+                        <div class="col-sm step-text" id="question-container">
+                            <div id="question">Frage</div>
+                        </div>
+                    </div>
+
+                    <div class="answers" id="answers-section">
+                        <button onclick="select(event, false)" class="answer unselected true"
+                            id="answer-buttons">Antwort1</button>
+                        <button onclick="select(event, false)" class="answer unselected true"
+                            id="answer-buttons">Antwort2</button>
+                        <button onclick="select(event, false)" class="answer unselected"
+                            id="answer-buttons">Antwort3</button>
+                    </div>
                 </div>
 
 
                 <div class="controls">
-                    <button onclick="check()" class="BUTTON_NEXT_BACK text-decoration-none hide" id="next-button">Absenden</button>
-                    <button id="start-button" class="BUTTON_NOTRUF">Quizstart</button>
+                    <button onclick="advance()" class="BUTTON_NEXT_BACK text-decoration-none"
+                        id="next-button">Absenden</button>
                 </div>
             </div>
         </div>
