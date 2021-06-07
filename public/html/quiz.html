@@ -16,8 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-
-
+    <script type="text/javascript" src="../javascript/quiz.js"></script>
 </head>
 
 <body>
@@ -103,46 +102,260 @@
         </div>
         <div id="quiz-block">
             <div class="container">
-                <div class="question active" id="question0">
+                <div class="question" id="question0">
                     <div class="fragen-counter">
                         <h4>Frage: 0/11</h4>
                     </div>
                     <div class="row step">
-                        <div class="col-sm step-text" id="question-container">
-                            <div id="question">Frage</div>
+                        <div class="col-sm step-text">
+                            <div>Frage</div>
                         </div>
                     </div>
 
-                    <div class="answers" id="answers-section">
-                        <button onclick="select(event, false)" class="answer unselected true"
-                            id="answer-buttons">Antwort1</button>
-                        <button onclick="select(event, false)" class="answer unselected true"
-                            id="answer-buttons">Antwort2</button>
-                        <button onclick="select(event, false)" class="answer unselected"
-                            id="answer-buttons">Antwort3</button>
+                    <div class="answers">
+                        <button onclick="select(event, false)" class="answer unselected true">Antwort1</button>
+                        <button onclick="select(event, false)" class="answer unselected true">Antwort2</button>
+                        <button onclick="select(event, false)" class="answer unselected">Antwort3</button>
                     </div>
                 </div>
 
-                <div class="question" id="question1">
+                <div class="question active" id="question1">
                     <div class="fragen-counter">
                         <h4>Frage: 1/11</h4>
                     </div>
                     <div class="row step">
-                        <div class="col-sm step-text" id="question-container">
-                            <div id="question">Frage</div>
+                        <div class="col-sm step-text">
+                            <div>Welcher Rhythmus zwischen Thoraxkompressionen und Beatmung sollte bei der
+                                Reanimation angewandt werden?</div>
                         </div>
                     </div>
 
-                    <div class="answers" id="answers-section">
-                        <button onclick="select(event, false)" class="answer unselected true"
-                            id="answer-buttons">Antwort1</button>
-                        <button onclick="select(event, false)" class="answer unselected true"
-                            id="answer-buttons">Antwort2</button>
-                        <button onclick="select(event, false)" class="answer unselected"
-                            id="answer-buttons">Antwort3</button>
+                    <div class="answers">
+                        <button onclick="select(event, true)" class="answer unselected true">30:2</button>
+                        <button onclick="select(event, true)" class="answer unselected">100:20</button>
+                        <button onclick="select(event, true)" class="answer unselected">15:3</button>
+                        <button onclick="select(event, true)" class="answer unselected">15:3</button>
                     </div>
                 </div>
 
+                <div class="question" id="question2">
+                    <div class="fragen-counter">
+                        <h4>Frage: 2/11</h4>
+                    </div>
+                    <div class="row step">
+                        <div class="col-sm step-text">
+                            <div>Welche Körperhaltungen können einer Person mit Atemnot dabei helfen
+                                freier atmen zu können?</div>
+                        </div>
+                    </div>
+
+                    <div class="answers">
+                        <button onclick="select(event, false)" class="answer unselected true">Kutschersitz</button>
+                        <button onclick="select(event, false)" class="answer unselected true">Aufrecht sitzen</button>
+                        <button onclick="select(event, false)" class="answer unselected">Flach
+                            liegen </button>
+                        <button onclick="select(event, false)" class="answer unselected">Stabile
+                            Seitenlage</button>
+                    </div>
+                </div>
+
+                <div class="question" id="question3">
+                    <div class="fragen-counter">
+                        <h4>Frage: 3/11</h4>
+                    </div>
+                    <div class="row step">
+                        <div class="col-sm step-text">
+                            <div>Was sollten Sie bei Gesichtsverbrennungen auf jeden Fall beachten?</div>
+                        </div>
+                    </div>
+
+                    <div class="answers">
+                        <button onclick="select(event, true)" class="answer unselected true">Nutzen
+                            Sie möglichst fließendes Wasser zur Kühlung </button>
+                        <button onclick="select(event, true)" class="answer unselected">Zur
+                            bestmöglichen Kühlung nutzen Sie Eis oder Kühl-Pads</button>
+                        <button onclick="select(event, true)" class="answer unselected">Versuchen
+                            Sie die Brandwunde möglichst fest zu verbinden</button>
+                    </div>
+                </div>
+
+                <div class="question" id="question4">
+                    <div class="fragen-counter">
+                        <h4>Frage: 4/11</h4>
+                    </div>
+                    <div class="row step">
+                        <div class="col-sm step-text">
+                            <div>Wieso muss man bei der stabilen Seitenlage stets darauf achten, dass die
+                                bewusstlose Person den Mund offen und Kopf überstreckt hat?</div>
+                        </div>
+                    </div>
+
+                    <div class="answers">
+                        <button onclick="select(event, false)" class="answer unselected true">Ersticken zu
+                            vermeiden</button>
+                        <button onclick="select(event, false)" class="answer unselected true">Atemwege öffnen </button>
+                        <button onclick="select(event, false)" class="answer unselected">Halsmuskulatur zu
+                            entspannen</button>
+                    </div>
+                </div>
+
+                <div class="question" id="question5">
+                    <div class="fragen-counter">
+                        <h4>Frage: 5/11</h4>
+                    </div>
+                    <div class="row step">
+                        <div class="col-sm step-text">
+                            <div>Wenn der Verdacht besteht, dass Ihr Gegenüber einen allergischen Schock
+                                hat beginnen Sie sofort mit</div>
+                        </div>
+                    </div>
+
+                    <div class="answers">
+                        <button onclick="select(event, false)" class="answer unselected">der
+                            Suche nach dem Notfall-Set</button>
+                        <button onclick="select(event, false)" class="answer unselected true">Kontrolle des
+                            Atems</button>
+                        <button onclick="select(event, false)" class="answer unselected">bei
+                            Bewusstsein des Betroffenen sofort zum Arzt eilen</button>
+                        <button onclick="select(event, false)" class="answer unselected true">dem
+                            Entfernen von engen Kleidungsstücken</button>
+                    </div>
+                </div>
+
+                <div class="question" id="question6">
+                    <div class="fragen-counter">
+                        <h4>Frage: 6/11</h4>
+                    </div>
+                    <div class="row step">
+                        <div class="col-sm step-text">
+                            <div>Wenn Sie bei einer schweren Verletzung versuchen die Blutung zu stoppen,
+                                achten Sie besonders darauf, dass</div>
+                        </div>
+                    </div>
+
+                    <div class="answers">
+                        <button onclick="select(event, false)" class="answer unselected">keine Keime
+                            in die Wunde gelangen</button>
+                        <button onclick="select(event, false)" class="answer unselected true">genügend Druck auf die
+                            Wunde ausgeübt wird</button>
+                        <button onclick="select(event, false)" class="answer unselected">der
+                            Betroffene aufrecht steht</button>
+                        <button onclick="select(event, false)" class="answer unselected true">Sie
+                            wenn
+                            möglich Druck auf nahe Arterien geben</button>
+                    </div>
+                </div>
+
+                <div class="question" id="question7">
+                    <div class="fragen-counter">
+                        <h4>Frage: 7/11</h4>
+                    </div>
+                    <div class="row step">
+                        <div class="col-sm step-text">
+                            <div>Mit welcher Maßnahme müssen Sie bei der Reanimation fortfahren bis der
+                                Rettungsdienst eintrifft?</div>
+                        </div>
+                    </div>
+
+                    <div class="answers">
+                        <button onclick="select(event, true)" class="answer unselected true">Thoraxkompressionen und
+                            evt. Beatmung</button>
+                        <button onclick="select(event, true)" class="answer unselected">AED
+                            suchen</button>
+                        <button onclick="select(event, true)" class="answer unselected">Atmung
+                            beobachten</button>7
+                        <button onclick="select(event, true)" class="answer unselected">Patient
+                            aufrichten</button>
+                    </div>
+                </div>
+
+                <div class="question" id="question8">
+                    <div class="fragen-counter">
+                        <h4>Frage: 8/11</h4>
+                    </div>
+                    <div class="row step">
+                        <div class="col-sm step-text">
+                            <div>In welcher dieser Situationen sollten Sie auf jeden Fall einen Notruf
+                                absetzen?</div>
+                        </div>
+                    </div>
+
+                    <div class="answers">
+                        <button onclick="select(event, false)" class="answer unselected true">Tiefer
+                            Schnitt am Unterarm aus dem hellrotes Blut spritzt</button>
+                        <button onclick="select(event, false)" class="answer unselected true">Fahrgast in der U-Bahn
+                            bricht bewusstlos zusammen und atmet nicht
+                            mehr</button>
+                        <button onclick="select(event, false)" class="answer unselected true">Ihre
+                            Nichte
+                            klagt nach einem Wespenstich über ein Engegefühl im Hals</button>
+                        <button onclick="select(event, false)" class="answer unselected">Sie haben
+                            eine Erkältung und Ihnen fällt Sonntag-Abend ein, dass sie noch eine Krankmeldung
+                            brauchen</button>
+                    </div>
+                </div>
+
+                <div class="question" id="question9">
+                    <div class="fragen-counter">
+                        <h4>Frage: 9/11</h4>
+                    </div>
+                    <div class="row step">
+                        <div class="col-sm step-text">
+                            <div>Bei Nasenbluten legen Sie den Kopf in den Nacken und versuchen sich zu
+                                beruhigen.</div>
+                        </div>
+                    </div>
+
+                    <div class="answers">
+                        <button onclick="select(event, true)" class="answer unselected">Wahr</button>
+                        <button onclick="select(event, true)" class="answer unselected true">Falsch</button>
+                    </div>
+                </div>
+
+                <div class="question" id="question10">
+                    <div class="fragen-counter">
+                        <h4>Frage: 10/11</h4>
+                    </div>
+                    <div class="row step">
+                        <div class="col-sm step-text">
+                            <div>Bei großflächigen Verbrennungen sollten Sie sofort handeln und</div>
+                        </div>
+                    </div>
+
+                    <div class="answers">
+                        <button onclick="select(event, false)" class="answer unselected">An der
+                            Haut haftende Kleidungsstücke vorsichtig entfernen</button>
+                        <button onclick="select(event, false)" class="answer unselected true">Atmung
+                            kontrollieren</button>
+                        <button onclick="select(event, false)" class="answer unselected true">Brandblasen
+                            nicht öffnen</button>
+                        <button onclick="select(event, false)" class="answer unselected">Ausgiebig
+                            kühlen</button>
+                    </div>
+                </div>
+
+                <div class="question" id="question11">
+                    <div class="fragen-counter">
+                        <h4>Frage: 11/11</h4>
+                    </div>
+                    <div class="row step">
+                        <div class="col-sm step-text">
+                            <div>Der Rhythmus von welchen Liedern kann dabei helfen den richtigen Rhythmus
+                                bei der Reanimation zu finden?</div>
+                        </div>
+                    </div>
+
+                    <div class="answers">
+                        <button onclick="select(event, false)" class="answer unselected true">„Highway to Hell“ von
+                            ACDC</button>
+                        <button onclick="select(event, false)" class="answer unselected">„Sandstorm“ von Darude
+                        </button>
+                        <button onclick="select(event, false)" class="answer unselected true">Hänschen
+                            Klein</button>
+                        <button onclick="select(event, false)" class="answer unselected true">„Stayin
+                            Alive“ von den Bee Gees</button>
+                    </div>
+                </div>
 
                 <div class="controls">
                     <button onclick="advance()" class="BUTTON_NEXT_BACK text-decoration-none"
@@ -185,5 +398,4 @@
             </nav>
         </div>
     </footer>
-    <script type="text/javascript" src="../javascript/quiz.js"></script>
 </body>

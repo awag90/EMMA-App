@@ -1,6 +1,6 @@
-let questionCounter = 0;
+let questionCounter = 1;
 let points = 0;
-const maxQuestion = 1;
+const maxQuestion = 11;
 
 function select(evt, exclusive) {
     if (exclusive == true) {
