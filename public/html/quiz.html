@@ -133,7 +133,7 @@
                         <button onclick="select(event, true)" class="answer unselected true">30:2</button>
                         <button onclick="select(event, true)" class="answer unselected">100:20</button>
                         <button onclick="select(event, true)" class="answer unselected">15:3</button>
-                        <button onclick="select(event, true)" class="answer unselected">15:3</button>
+                        <button onclick="select(event, true)" class="answer unselected">1:1</button>
                     </div>
                 </div>
 
@@ -364,20 +364,32 @@
         </div>
         <div id="result-block">
             <div class="container">
-                <div class="row">
-                    <h2>Ergebnis: <span id="points-display"></span></h2>
+                <div class="row step header">
+                    <h2>Ihr Ergebnis: <span id="points-display"></span></h2>
+                    <div class="result row" id="excelent">
+                        <p>Wow! Sie haben ein sehr gutes Erste-Hilfe-Wissen. 
+                        Besuchen Sie doch einen unserer <a href="../html/first-aid-online.html">Erste-Hilfe-Kurse</a> um Ihre theoretischen Kenntnisse in der Praxis unter Beweis zu stellen.</p>
+                    </div>
+                    <div class="result row" id="good">
+                        <p>Ziemlich gut! Sie haben bewiesen, dass Sie schon einiges über Erste-Hilfe wissen.
+                        Um noch die letzten Wissenslücken zu schließen, empfehlen wir Ihnen den Besuch einer unserer <a href="../html/first-aid-online.html">Erste-Hilfe-Kurse</a></p>
+                    </div>
+                    <div class="result row" id="normal">
+                        <p>Sie sind auf dem richtigen Wege, jedoch sollten Sie noch etwas 
+                        tiefgründiger in die Materie Erste-Hilfe einsteigen. Hier wird Ihnen ein <a href="../html/first-aid-online.html">Erste-Hilfe-Kurs</a> von EMMA</p>
+                    </div>
+                    <div class="result row" id="bad">
+                        <p>Leider bestehen noch fundamentale Wissenslücken, 
+                        besuchen Sie doch am besten einen unserer <a href="../html/first-aid-online.html">Erste-Hilfe-Kurse</a> damit Sie für eine Not-Situation besser vorbereit sind.</p>
+                    </div>
                 </div>
-                <div class="result row" id="excelent">
-                    Excelent
-                </div>
-                <div class="result row" id="good">
-                    Gut
-                </div>
-                <div class="result row" id="normal">
-                    Normal
-                </div>
-                <div class="result row" id="bad">
-                    Buh!
+            </div>
+            <div class="row">
+                <div class="pathEnd">
+                    <h2>Falls Sie Anregungen oder Fragen zu unserem Quiz haben, nutzen Sie bitte unser Feedback-Formular.<br><br>
+                        Vielen Dank!
+                    </h2>
+                    <a href="../html/feedback.html" class="BUTTON_FEEDBACK">Feedback</a>
                 </div>
             </div>
         </div>
@@ -418,5 +430,4 @@
     </footer>
 </body>
 <script type="text/javascript" src="../javascript/quiz.js"></script>
-
 </html>

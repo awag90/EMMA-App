@@ -1,3 +1,12 @@
+:root{
+    --red:#C71010;
+    --white:#f3f8fe;
+    --lightBlue:#457B9D;
+    --lightBlueHover: #4f8bb1;
+    --darkBlue:#1D3557;
+    --grey:#554F4A;
+}
+
 /*Question/Answers*/
 
 #quiz-block{
@@ -26,7 +35,7 @@
 
 .answer{
     display: block;
-    width: 30%;
+    width: 50%;
     padding: 2.5em;
     border-radius: 20px;
     color: var(--white);
@@ -45,6 +54,36 @@
     display: none;
 }
 
+.header h2{
+    color: var(--red);
+}
+.result p {
+    color: var(--white);
+    margin: 1em;
+}
+#result-block p a {
+    text-decoration: none;
+    color: var(--red);
+}
+#result-block .pathend a {
+    text-decoration: none;
+    color: var(--white);
+}
+footer{
+    margin-top:5em;
+}
 .result{
     display: none;
 }
+
+@media (min-width:574px){
+    
+ }
+ @media(min-width:827px){
+     
+ }
+ 
+ @media (max-width: 992px){
+     
+     
+   }
