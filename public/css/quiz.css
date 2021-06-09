@@ -40,3 +40,11 @@
 .selected{
     background-color: var(--lightBlue);
 }
+
+#result-block{
+    display: none;
+}
+
+.result{
+    display: none;
+}

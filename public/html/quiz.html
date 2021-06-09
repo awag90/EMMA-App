@@ -16,7 +16,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="../javascript/quiz.js"></script>
 </head>
 
 <body>
@@ -263,7 +262,7 @@
                         <button onclick="select(event, true)" class="answer unselected">AED
                             suchen</button>
                         <button onclick="select(event, true)" class="answer unselected">Atmung
-                            beobachten</button>7
+                            beobachten</button>
                         <button onclick="select(event, true)" class="answer unselected">Patient
                             aufrichten</button>
                     </div>
@@ -363,6 +362,25 @@
                 </div>
             </div>
         </div>
+        <div id="result-block">
+            <div class="container">
+                <div class="row">
+                    <h2>Ergebnis: <span id="points-display"></span></h2>
+                </div>
+                <div class="result row" id="excelent">
+                    Excelent
+                </div>
+                <div class="result row" id="good">
+                    Gut
+                </div>
+                <div class="result row" id="normal">
+                    Normal
+                </div>
+                <div class="result row" id="bad">
+                    Buh!
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -399,3 +417,6 @@
         </div>
     </footer>
 </body>
+<script type="text/javascript" src="../javascript/quiz.js"></script>
+
+</html>

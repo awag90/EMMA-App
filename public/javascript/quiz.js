@@ -42,10 +42,7 @@ function check() {
             }
         }
     }
-
     points += questionPoints;
-    alert("Du hast " + points + " Punkte");
-
 }
 
 function advance() {
@@ -54,5 +51,23 @@ function advance() {
         document.querySelector("#question" + questionCounter).classList.remove("active");
         questionCounter++;
         document.querySelector("#question" + questionCounter).classList.add("active");
+    } else {
+        loadResult();
+    }
+}
+
+function loadResult() {
+    document.querySelector("#quiz-block").style.display = "none";
+    document.querySelector("#result-block").style.display = "block";
+    document.querySelector("#points-display").innerHTML = points.toPrecision(3) + " Punkte";
+
+    if (points <= 30){
+        document.querySelector("#bad").style.display = "block";
+    }else if( points <= 60){
+        document.querySelector("#normal").style.display = "block";
+    }else if (points <= 90){
+        document.querySelector("#good").style.display = "block";
+    }else{
+        document.querySelector("#excelent").style.display = "block";
     }
 }
