@@ -22,10 +22,15 @@ function select(evt, exclusive) {
 }
 
 function check() {
-    let trueAnswers = countTrueAnswers();
+    let trueAnswers = 0;
     let questionPoints = 0;
     let answers = document.querySelectorAll("#question" + questionCounter + " .answer");
-    
+    for (let ele of answers) {
+        if (ele.classList.contains("true")) {
+            trueAnswers++;
+        }
+    }
+
     for (let ele of answers) {
         if (ele.classList.contains("true") && ele.classList.contains("selected")) {
             questionPoints += 10 / trueAnswers;
@@ -38,16 +43,6 @@ function check() {
         }
     }
     points += questionPoints;
-}
-
-function countTrueAnswers(){
-    let trueAnswers = 0;
-    for (let ele of answers) {
-        if (ele.classList.contains("true")) {
-            trueAnswers++;
-        }
-    }
-    return trueAnswers;
 }
 
 function advance() {
