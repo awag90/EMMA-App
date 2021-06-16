@@ -90,6 +90,9 @@ footer{
         margin-top: 1.5em;
         font-size: 1.2rem;
     }
+    .controls{
+        margin-top: 2em;
+    }
  }
  @media(min-width:827px){
     .answer{
@@ -99,6 +102,9 @@ footer{
         border-radius: 20px;
         color: var(--white);
         margin-top: 1.5em;
+    }
+    .controls{
+        margin-top: 2em;
     }
  }
  

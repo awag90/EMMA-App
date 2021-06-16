@@ -59,7 +59,7 @@ function advance() {
 function loadResult() {
     document.querySelector("#quiz-block").style.display = "none";
     document.querySelector("#result-block").style.display = "block";
-    document.querySelector("#points-display").innerHTML = points.toPrecision(3) + " Punkte";
+    document.querySelector("#points-display").innerHTML = points.toPrecision(3) + " / 110 Punkten";
 
     if (points <= 30){
         document.querySelector("#bad").style.display = "block";
