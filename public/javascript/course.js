@@ -4,14 +4,17 @@ function signup() {
     let mail = document.querySelector("#mail").value;
     let course = document.querySelector("#course-type").value;
     let course_date = document.querySelector("#date").value;
+    document.querySelector("#signUp").style.display = "block";
+
     if (!testString(first_name)){
         document.querySelector("#signUp").innerHTML = "Vorname enthält ungültige Zeichen";
     }else if(!testString(last_name)){
         document.querySelector("#signUp").innerHTML = "Nachname enthält ungültige Zeichen";
     }else if (first_name && last_name && mail && course && course_date ){
-        document.querySelector("#signUp").innerHTML = "Hallo " + first_name + "! Du hast dich erfolgreich für den " + course + " Kurs am " + course_date + " angemeldet. Wir haben dir eine Bestätigungs-Mail an " + mail + " geschickt. Wir freuen uns dich bal zu treffen!";
+        document.querySelector("#signUp").innerHTML = "<h2>Hallo " + first_name + "!</h2><br> Du hast dich erfolgreich für den <span>" + course + "</span> Kurs am <span>" + course_date + "</span> angemeldet.<br>Wir haben dir eine Bestätigungs-Mail an <span>" + mail + "</span> geschickt.<br> Wir freuen uns dich bal zu treffen!";
     }else{
-        document.querySelector("#signUp").innerHTML = "Bitte füllen Sie alle Felder aus um das Formular abzuschicken!";
+        document.querySelector("#signUp").innerHTML = "<p>Bitte füllen Sie alle Felder aus um das Formular abzuschicken!</p>";
+        
     }
 }
 

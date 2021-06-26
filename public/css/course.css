@@ -35,5 +35,38 @@
     margin-top:5em;
 }
 
+#signUp{
+    display: none;
+    margin-bottom: 5em;
+    
+}
 
+.signUpStyle{
+    display: block;
+    background-color: var(--darkBlue);
+    text-align: center;
+    color: var(--white);
+    font-size: 14pt;
+    padding: 1.5em 0 1.5em 0;
+}
 
+.signUpStyle span{
+    color: var(--red);
+}
+
+@media (min-width:574px){
+    .signUpStyle{
+        margin:2em;
+        border-radius:40px;
+        font-size:14pt;
+    }
+}
+
+@media(min-width:827px){
+        .signUpStyle{
+            max-width:40em;
+            margin:auto;
+            
+            font-size: 24pt;
+        }
+}
