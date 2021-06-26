@@ -80,10 +80,10 @@ footer{
     display: none;
 }
 
-@media (max-width:574px){
+@media (min-width:574px){
     .answer{
         display: block;
-        width: 80%;
+        width: 50%;
         padding: 2.5em;
         border-radius: 20px;
         color: var(--white);

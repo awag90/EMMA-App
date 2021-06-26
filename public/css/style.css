@@ -321,7 +321,6 @@ nav img{
     .seperator {
         display: none;
     }
-    
     .course-add{
         margin-top: 5em;
     }
@@ -338,7 +337,6 @@ nav img{
         text-align: center;
         margin-top:2em;
     }
-
     .collapse{
         display: block;
         margin: 1.5em 0.1em;
@@ -346,7 +344,6 @@ nav img{
     .expand-anchor-field a{
         height: 6em;  
     }
-    
   }
 
 #heartwave img{
